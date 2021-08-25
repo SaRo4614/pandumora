@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandumora</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <header class="header">
+            <h1 class="titulo">Pandumora</h1>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Modelos</a>
+        <a class="navegacion__enlace" href="diseños.html">Diseños</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="formulario.html">Tu pedido</a>
+    </nav>
+
+    <main class="contenedor">
+        <h3>Hacé Tu Pedido:</h3>
+
+        <form class="formulario" name="Pandumora" method="POST" data-netlify="true">
+            <div class="campo">
+                <select class="campo__opcion">
+                    <option disabled selected>-- Modelo --</option>
+                    <option>Sin Borde</option>
+                    <option>Con Borde</option>
+                    <option>Cuenco</option>
+                </select>
+                <select class="campo__opcion">
+                    <option disabled selected>-- Tamaño --</option>
+                    <option>N° 12</option>
+                    <option>N° 14</option>
+                    <option>N° 16</option>
+                </select>
+                <select class="campo__opcion">
+                    <option disabled selected>-- Diseño --</option>
+                    <option>Mandala</option>
+                    <option>Retrato</option>
+                    <option>Diseño Propio</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="email">Correo</label>
+                <input class="campo__field" type="email" placeholder="E-mail" id="email">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+            </div>
+
+            <div class="campo">
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+        </form>
+
+
+    </main>
+
+
+    <footer>
+        <div class="footer__tupedido">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#89119D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+            </svg>
+            <a class="instagram__tupedido" href="https://www.instagram.com/pandumora/">Instagram</a>
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#89119D" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            </svg>
+            <a class="telefono__tupedido" href="#">+54 9 11 2235-1684</a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
